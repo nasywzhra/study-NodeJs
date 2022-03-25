@@ -1,15 +1,15 @@
-// import from 'express'
+// import express from 'express';
 const express = require('express');
 
-// instantiate express
+//instantiate express
 const app = express();
 
-// routing index: /menggunakan GET
+//routing index: / menggunakan methot GET
 app.get('/', (req, res) => {
     res.send('Hello World!');
-});
+})
 
-//tentukan port dari server
+// menentukan porst dari server
 app.listen(3000, () => {
-    console.log('Server berjalan di port 3000');
-});
+    console.log('Server berjalan diport 3000');
+})
